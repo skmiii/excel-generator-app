@@ -65,7 +65,7 @@ function App() {
   const handleGenerateExcel = async () => {
     setIsLoading(true);
     try {
-      const response = await axios.post('http://localhost:8000/api/generate-excel', {
+      const response = await axios.post('https://excel-generator-app.onrender.com/api/generate-excel', {
         dynamic_columns: dynamicColumns,
         custom_columns: customColumns,
       }, {
